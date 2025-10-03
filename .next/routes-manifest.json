@@ -1,0 +1,116 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/product/[id]",
+      "regex": "^/product/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/product/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/add-address",
+      "regex": "^/add\\-address(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/add\\-address(?:/)?$"
+    },
+    {
+      "page": "/all-products",
+      "regex": "^/all\\-products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/all\\-products(?:/)?$"
+    },
+    {
+      "page": "/cart",
+      "regex": "^/cart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cart(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/my-orders",
+      "regex": "^/my\\-orders(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/my\\-orders(?:/)?$"
+    },
+    {
+      "page": "/order-placed",
+      "regex": "^/order\\-placed(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/order\\-placed(?:/)?$"
+    },
+    {
+      "page": "/seller",
+      "regex": "^/seller(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/seller(?:/)?$"
+    },
+    {
+      "page": "/seller/orders",
+      "regex": "^/seller/orders(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/seller/orders(?:/)?$"
+    },
+    {
+      "page": "/seller/product-list",
+      "regex": "^/seller/product\\-list(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/seller/product\\-list(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
